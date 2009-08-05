@@ -1,10 +1,10 @@
-%define lib_major 0
+%define lib_major 1
 %define libname %mklibname gee %{lib_major}
 %define libnamedev %mklibname -d gee 
 
 Name:		libgee
 Summary:	GObject-based collection library
-Version:	0.2.0
+Version:	0.3.0
 Release:	%mkrel 1
 License: 	LGPLv2+
 Group:		System/Libraries
