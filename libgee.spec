@@ -5,7 +5,7 @@
 Name:		libgee
 Summary:	GObject-based collection library
 Version:	0.5.1
-Release:	%mkrel 1
+Release:	%mkrel 2
 License: 	LGPLv2+
 Group:		System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
