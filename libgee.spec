@@ -4,8 +4,8 @@
 
 Name:		libgee
 Summary:	GObject-based collection library
-Version:	0.5.1
-Release:	%mkrel 2
+Version:	0.5.2
+Release:	%mkrel 1
 License: 	LGPLv2+
 Group:		System/Libraries
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -63,6 +63,7 @@ files to allow you to develop with libgee.
 %defattr(-, root, root)
 %doc AUTHORS COPYING NEWS README
 %{_libdir}/libgee.so.%{lib_major}*
+%_libdir/girepository-1.0/Gee-1.0.typelib
 
 %files -n %{libnamedev}
 %defattr(-, root, root)
