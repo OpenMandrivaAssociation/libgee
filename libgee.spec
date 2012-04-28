@@ -1,4 +1,4 @@
-%define major 2
+%define major 0
 %define gir_major 1.0
 
 %define libname %mklibname gee %{major}
@@ -7,7 +7,7 @@
 
 Name:		libgee
 Summary:	GObject-based collection library
-Version:	0.6.4
+Version:	0.7.2
 Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
@@ -32,7 +32,6 @@ classes for commonly used data structures.
 %package -n %{girname}
 Summary:    GObject Introspection interface description for %{name}
 Group:      System/Libraries
-Requires:   %{libname} = %{version}-%{release}
 
 %description -n %{girname}
 GObject Introspection interface description for %{name}.
@@ -63,10 +62,10 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files -n %{libname}
 %doc AUTHORS COPYING NEWS README
-%{_libdir}/libgee.so.%{major}*
+%{_libdir}/libgee-0.8.so.%{major}*
 
 %files -n %{girname}
-%_libdir/girepository-1.0/Gee-1.0.typelib
+%_libdir/girepository-1.0/Gee-0.8.typelib
 
 %files -n %{develname}
 %doc ChangeLog
@@ -74,4 +73,4 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
 %{_datadir}/vala/vapi/*.vapi
-%_datadir/gir-1.0/Gee-1.0.gir
+%_datadir/gir-1.0/Gee-0.8.gir
