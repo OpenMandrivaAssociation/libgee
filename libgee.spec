@@ -9,7 +9,7 @@
 Name:		libgee
 Summary:	GObject-based collection library
 Version:	0.7.2
-Release:	2
+Release:	3
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
@@ -25,7 +25,6 @@ classes for commonly used data structures.
 %package -n	%{libname}
 Summary:	Collection library providing GObject-based interfaces and classes 
 Group:		%{group}
-Obsoletes:	%{_lib}gee0 < 0.7.2-2
 
 %description -n	%{libname}
 Libgee is a collection library providing GObject-based interfaces and 
@@ -34,7 +33,6 @@ classes for commonly used data structures.
 %package -n %{girname}
 Summary:	GObject Introspection interface description for %{name}
 Group:		System/Libraries
-%rename		%{_lib}gee-gir1.0 < 0.7.2-2
 
 %description -n %{girname}
 GObject Introspection interface description for %{name}.
