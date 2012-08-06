@@ -1,9 +1,8 @@
-%define api 0.8
-%define major 0
-%define gir_major 0.8
+%define api	0.8
+%define major	0
 
 %define libname %mklibname gee %{api} %{major}
-%define girname %mklibname gee-gir %{gir_major}
+%define girname %mklibname gee-gir %{api}
 %define develname %mklibname -d gee 
 
 Name:		libgee
@@ -13,7 +12,7 @@ Release:	3
 License: 	LGPLv2+
 Group:		System/Libraries
 URL: 		http://live.gnome.org/Libgee
-Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{api}/%{name}-%{version}.tar.xz
+Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
@@ -66,7 +65,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/libgee-%{api}.so.%{major}*
 
 %files -n %{girname}
-%{_libdir}/girepository-1.0/Gee-%{gir_major}.typelib
+%{_libdir}/girepository-1.0/Gee-%{api}.typelib
 
 %files -n %{develname}
 %doc ChangeLog
@@ -74,5 +73,5 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
 %{_datadir}/vala/vapi/*.vapi
-%{_datadir}/gir-1.0/Gee-%{gir_major}.gir
+%{_datadir}/gir-1.0/Gee-%{api}.gir
 
