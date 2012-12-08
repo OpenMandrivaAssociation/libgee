@@ -3,11 +3,11 @@
 
 %define libname %mklibname gee %{api} %{major}
 %define girname %mklibname gee-gir %{api}
-%define develname %mklibname -d gee 
+%define devname %mklibname -d gee 
 
-Name:		libgee
 Summary:	GObject-based collection library
-Version:	0.8.0
+Name:		libgee
+Version:	0.8.1
 Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
@@ -36,14 +36,14 @@ Group:		System/Libraries
 %description -n %{girname}
 GObject Introspection interface description for %{name}.
 
-%package -n	%{develname}
+%package -n	%{devname}
 Summary:	Libraries and include files for developing with libgee
 Group:		Development/C
 Requires:	%{libname} = %{version}
 Requires:	%{girname} = %{version}
 Provides:	%{name}-devel = %{version}-%{release}
 
-%description -n	%{develname}
+%description -n	%{devname}
 This package provides the necessary development libraries and include
 files to allow you to develop with libgee.
 
@@ -67,7 +67,7 @@ find %{buildroot} -name '*.la' -exec rm -f {} ';'
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Gee-%{api}.typelib
 
-%files -n %{develname}
+%files -n %{devname}
 %doc ChangeLog
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
