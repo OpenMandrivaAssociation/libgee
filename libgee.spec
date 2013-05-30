@@ -1,7 +1,7 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
+
 %define api	0.8
 %define major	2
-
 %define libname %mklibname gee %{api} %{major}
 %define girname %mklibname gee-gir %{api}
 %define devname %mklibname -d gee 
@@ -12,7 +12,7 @@ Version:	0.8.6
 Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
-URL: 		http://live.gnome.org/Libgee
+Url: 		http://live.gnome.org/Libgee
 Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
@@ -40,8 +40,8 @@ GObject Introspection interface description for %{name}.
 %package -n	%{devname}
 Summary:	Libraries and include files for developing with libgee
 Group:		Development/C
-Requires:	%{libname} = %{version}
-Requires:	%{girname} = %{version}
+Requires:	%{libname} = %{version}-%{release}
+Requires:	%{girname} = %{version}-%{release}
 Provides:	%{name}-devel = %{version}-%{release}
 
 %description -n	%{devname}
@@ -59,17 +59,15 @@ files to allow you to develop with libgee.
 
 %install
 %makeinstall_std
-find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %files -n %{libname}
-%doc AUTHORS COPYING NEWS README
 %{_libdir}/libgee-%{api}.so.%{major}*
 
 %files -n %{girname}
 %{_libdir}/girepository-1.0/Gee-%{api}.typelib
 
 %files -n %{devname}
-%doc ChangeLog
+%doc AUTHORS COPYING NEWS README ChangeLog
 %{_libdir}/*.so
 %{_libdir}/pkgconfig/*
 %{_includedir}/*
