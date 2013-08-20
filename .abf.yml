@@ -1,4 +1,5 @@
 removed_sources:
   libgee-0.10.1.tar.xz: 2a45d64dc42e4b8b5fdee6de4c91bac3126a094e
-sources:
   libgee-0.10.3.tar.xz: 34f16d5fd3d36440251e552f0922d9add1e31388
+sources:
+  libgee-0.10.4.tar.xz: dc79f9cbca0a63968e9e495f3ac1a0ac1b67bde4
