@@ -8,8 +8,8 @@
 
 Summary:	GObject-based collection library
 Name:		libgee
-Version:	0.10.4
-Release:	7
+Version:	0.16.1
+Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
 Url: 		http://live.gnome.org/Libgee
@@ -52,8 +52,7 @@ files to allow you to develop with libgee.
 %setup -q
 
 %build
-%configure2_5x \
-	--disable-static
+%configure
 
 %make
 
