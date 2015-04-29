@@ -4,11 +4,11 @@
 %define major	2
 %define libname %mklibname gee %{api} %{major}
 %define girname %mklibname gee-gir %{api}
-%define devname %mklibname -d gee 
+%define devname %mklibname -d gee
 
 Summary:	GObject-based collection library
 Name:		libgee
-Version:	0.16.1
+Version:	 0.18.0
 Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
@@ -19,16 +19,16 @@ BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
 %description
-Libgee is a collection library providing GObject-based interfaces and 
-classes for commonly used data structures. 
+Libgee is a collection library providing GObject-based interfaces and
+classes for commonly used data structures.
 
 %package -n	%{libname}
-Summary:	Collection library providing GObject-based interfaces and classes 
+Summary:	Collection library providing GObject-based interfaces and classes
 Group:		%{group}
 
 %description -n	%{libname}
-Libgee is a collection library providing GObject-based interfaces and 
-classes for commonly used data structures. 
+Libgee is a collection library providing GObject-based interfaces and
+classes for commonly used data structures.
 
 %package -n %{girname}
 Summary:	GObject Introspection interface description for %{name}
