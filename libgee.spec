@@ -1,4 +1,5 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
+%define _disable_rebuild_configure 1
 
 %define api	0.8
 %define major	2
@@ -9,7 +10,7 @@
 Summary:	GObject-based collection library
 Name:		libgee
 Version:	 0.18.0
-Release:	4
+Release:	5
 License: 	LGPLv2+
 Group:		System/Libraries
 Url: 		http://live.gnome.org/Libgee
