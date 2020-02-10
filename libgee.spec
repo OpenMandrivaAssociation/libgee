@@ -9,7 +9,7 @@
 
 Summary:	GObject-based collection library
 Name:		libgee
-Version:	0.20.2
+Version:	0.20.3
 Release:	1
 License: 	LGPLv2+
 Group:		System/Libraries
@@ -55,10 +55,10 @@ files to allow you to develop with libgee.
 %build
 %configure
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/libgee-%{api}.so.%{major}*
