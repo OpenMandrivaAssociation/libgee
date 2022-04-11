@@ -10,11 +10,11 @@
 Summary:	GObject-based collection library
 Name:		libgee
 Version:	0.20.5
-Release:	1
+Release:	2
 License: 	LGPLv2+
 Group:		System/Libraries
 Url: 		http://live.gnome.org/Libgee
-Source0: 	ftp://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{name}-%{version}.tar.xz
+Source0: 	https://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
@@ -73,4 +73,3 @@ files to allow you to develop with libgee.
 %{_includedir}/*
 %{_datadir}/vala/vapi/*.vapi
 %{_datadir}/gir-1.0/Gee-%{api}.gir
-
