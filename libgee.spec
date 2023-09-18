@@ -10,10 +10,10 @@
 Summary:	GObject-based collection library
 Name:		libgee
 Version:	0.20.6
-Release:	3
+Release:	4
 License: 	LGPLv2+
 Group:		System/Libraries
-Url: 		http://live.gnome.org/Libgee
+Url: 		https://live.gnome.org/Libgee
 Source0: 	https://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:	pkgconfig(glib-2.0)
