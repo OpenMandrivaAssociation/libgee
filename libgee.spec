@@ -18,6 +18,11 @@ Group:		System/Libraries
 Url: 		https://live.gnome.org/Libgee
 Source0: 	https://ftp.gnome.org/pub/GNOME/sources/libgee/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
